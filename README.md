@@ -1,142 +1,185 @@
-# 📚 Miniguia de Estudos: Finanças Pessoais com NotebookLM
+# Miniguia de Estudos: Financas Pessoais com NotebookLM
 
-> Projeto prático do desafio DIO — "Acelere sua Aprendizagem com IA: Explore o Poder do NotebookLM"
+Projeto pratico do desafio DIO - "Acelere sua Aprendizagem com IA: Explore o Poder do NotebookLM"
 
 ---
 
-## 🎯 Contexto e Objetivos
+## Contexto e Objetivos
 
-**Assunto escolhido:** Finanças Pessoais para Iniciantes
+**Assunto escolhido:** Financas Pessoais para Iniciantes
 
 **Por que esse tema?**
-Educação financeira é uma habilidade essencial, porém pouco ensinada nas escolas brasileiras. Usar IA para consolidar fontes e criar um guia de estudos personalizado potencializa muito o aprendizado.
+Educacao financeira e uma habilidade essencial, porem pouco ensinada nas escolas brasileiras. Usar IA para consolidar fontes e criar um guia de estudos personalizado potencializa muito o aprendizado.
 
 **Objetivos de estudo:**
-- Compreender os fundamentos de orçamento pessoal e controle de gastos
-- Entender conceitos de investimentos básicos (Tesouro Direto, CDB, Fundos)
-- Aprender sobre reserva de emergência e planejamento financeiro
+- Compreender os fundamentos de orcamento pessoal e controle de gastos
+- Entender conceitos de investimentos basicos (Tesouro Direto, CDB, Fundos)
+- Aprender sobre reserva de emergencia e planejamento financeiro
 - Dominar termos do mercado financeiro para iniciantes
-- Criar um material de revisão reutilizável com apoio de IA
+- Criar um material de revisao reutilizavel com apoio de IA
 
 ---
 
-## 📎 Curadoria de Fontes (3–5 fontes abertas)
+## Curadoria de Fontes (3-5 fontes abertas)
 
-As fontes abaixo foram selecionadas, baixadas/salvas e inseridas no NotebookLM:
+As fontes abaixo foram selecionadas e inseridas no NotebookLM como URLs publicas:
 
 | # | Fonte | Tipo | Link |
 |---|-------|------|------|
-| 1 | Guia de Educação Financeira — Banco Central do Brasil | PDF | [bcb.gov.br](https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Cuidando_do_seu_dinheiro_Gestao_de_Financas_Pessoais/cartilha_cidadania_financeira.pdf) |
-| 2 | Como se Tornar Independente Financeiramente — CVM Investidor | Texto/PDF | [investidor.gov.br](https://www.investidor.gov.br/publicacao/Livros/livro_Como_se_tornar_independente_financeiramente.pdf) |
-| 3 | Tesouro Direto — Guia do Investidor Iniciante | PDF | [tesourodireto.com.br](https://www.tesourodireto.com.br/data/files/7E/51/0E/FD/6D5B8710F4FBF5B6D8A80AC2/Guia%20do%20Investidor%20-%20Tesouro%20Direto.pdf) |
-| 4 | Caderno de Educação Financeira — ENEF | PDF | [vidaedinheiro.gov.br](http://www.vidaedinheiro.gov.br/wp-content/uploads/2017/08/Caderno-Educacao-Financeira-Gestao-de-Financas-Pessoais1.pdf) |
-| 5 | Guia de Finanças Pessoais — CONEF | Texto | [conef.gov.br](https://www.conef.gov.br/) |
+| 1 | Cidadania Financeira - Banco Central do Brasil | Site | https://www.bcb.gov.br/cidadaniafinanceira |
+| 2 | Portal do Investidor - CVM | Site | https://www.investidor.gov.br/menu/primeiros_passos/Investidor_Iniciante/Investidor_Iniciante.html |
+| 3 | Blog Tesouro Direto | Site | https://www.tesourodireto.com.br/blog/ |
+| 4 | Vida e Dinheiro - ENEF | Site | https://www.vidaedinheiro.gov.br |
+| 5 | CONEF - Educacao Financeira | Site | https://www.conef.gov.br/mais-informacoes/educacao-financeira.html |
+
+**Observacao:** As fontes 4 e 5 nao foram aceitas pelo NotebookLM. As 3 primeiras foram carregadas com sucesso. Esta foi uma cicatriz real registrada durante o processo.
 
 ---
 
-## 🧠 Engenharia de Prompts e "Cicatrizes"
+## Engenharia de Prompts e Cicatrizes
 
-### Perguntas estratégicas formuladas no NotebookLM
+### Prompt 1 - Principios fundamentais
 
-**Prompt 1 — Visão geral:**
-> "Com base nas fontes carregadas, quais são os 5 princípios fundamentais de finanças pessoais para quem está começando do zero?"
+**Pergunta:** "Com base nas fontes carregadas, quais sao os 5 principios fundamentais de financas pessoais para quem esta comecando do zero?"
 
-*Resposta obtida:* O NotebookLM listou: (1) controle de gastos, (2) criação de orçamento, (3) formação de reserva de emergência, (4) eliminação de dívidas antes de investir, (5) início precoce nos investimentos. Referenciou trechos do Guia do Banco Central e da ENEF.
+**Resposta obtida (resumida):**
+O NotebookLM listou 5 principios com base nas etapas do "Antes de Investir":
+1. Organize a sua vida financeira - colocar as contas em ordem e estruturar o orcamento
+2. Defina seus objetivos - clareza sobre metas de curto, medio e longo prazo
+3. Respeite o seu perfil de investidor - entender a tolerancia a riscos
+4. Considere os momentos da vida - o planejamento deve refletir a fase de vida atual
+5. Entenda as caracteristicas dos investimentos - buscar instrucao antes de aplicar
 
-*Observação:* A resposta foi muito genérica na primeira tentativa. Precisei refinar.
-
----
-
-**Prompt 2 — Refinamento (troubleshooting):**
-> "Explique de forma simples, como se eu tivesse 18 anos, o que é reserva de emergência e como calculá-la com base nas fontes."
-
-*Resposta obtida:* Muito mais didática. Citou que a reserva deve cobrir de 3 a 6 meses de despesas fixas e indicou o trecho exato do Caderno ENEF com exemplos práticos.
-
-*Dificuldade encontrada:* O NotebookLM às vezes mistura informações de fontes diferentes sem deixar claro qual fonte usou. Resolvi pedindo explicitamente: "Cite a fonte específica para cada ponto."
+Cicatriz: A resposta inicial foi generica. Aprendi que quanto mais especifica a pergunta, melhor o resultado.
 
 ---
 
-**Prompt 3 — Glossário:**
-> "Crie um glossário com os 10 termos financeiros mais importantes presentes nas fontes, com definição em linguagem simples."
+### Prompt 2 - Reserva de Emergencia
 
-*Resposta obtida:* Gerou um glossário claro com termos como: CDI, SELIC, Tesouro Direto, Rentabilidade, Liquidez, Diversificação, Taxa de Administração, IOF, IPCA, Patrimônio Líquido.
+**Pergunta:** "Explique de forma simples, como se eu tivesse 18 anos, o que e reserva de emergencia e como calcula-la."
 
----
+**Resposta obtida (resumida):**
+- A reserva e o colete salva-vidas financeiro para imprevistos
+- Calcular: despesas fixas essenciais mensais multiplicado por 3 a 6 meses
+- Manter em produto de alta liquidez
 
-**Prompt 4 — Prompts reutilizáveis:**
-> "Com base no conteúdo das fontes, sugira 5 perguntas que eu poderia usar para revisar esse material no futuro."
-
-*Resposta obtida:* Excelente. O NotebookLM gerou perguntas de revisão que cobriram todos os objetivos definidos inicialmente.
-
----
-
-**Prompt 5 — Teste de limite (cicatriz):**
-> "Faça uma comparação entre CDB e Tesouro Direto explicando qual é melhor."
-
-*Dificuldade encontrada:* O NotebookLM se recusou a dar uma recomendação definitiva ("qual é melhor") por não ter fontes com comparações diretas. Aprendi que é preciso formular perguntas descritivas, não prescritivas. Reformulei para: "Quais são as diferenças entre CDB e Tesouro Direto segundo as fontes?" — funcionou perfeitamente.
+Cicatriz: O NotebookLM identificou que as fontes nao detalham explicitamente o conceito e avisou com transparencia. Aprendizado valioso sobre uso critico da IA.
 
 ---
 
-## 📖 Miniguia de Estudo (Entrega Final)
+### Prompt 3 - Glossario
+
+**Pergunta:** "Crie um glossario com os 10 termos financeiros mais importantes presentes nas fontes, com definicao em linguagem simples."
+
+**Glossario gerado pelo NotebookLM:**
+
+1. Cidadania Financeira: Exercicio de direitos e deveres para gerenciar bem os recursos financeiros.
+2. Educacao Financeira: Processo continuo de melhora da compreensao sobre dinheiro e produtos financeiros.
+3. Inclusao Financeira: Acesso efetivo de todos os adultos a servicos financeiros formais.
+4. Poupanca: Habito de nao gastar tudo que se ganha, reservando uma parcela para o futuro.
+5. Inflacao: Aumento continuo e generalizado dos precos; quando sobe, o dinheiro perde valor.
+6. Cambio: Operacoes de troca de moedas entre diferentes paises.
+7. Acoes: Pequenas fatias de uma empresa negociadas na bolsa de valores.
+8. Titulos Publicos: Investimentos em que voce empresta dinheiro ao Governo Federal com retorno futuro.
+9. Fundos de Investimentos: Condominio financeiro gerido por especialista com recursos de varias pessoas.
+10. Perfil de Investidor: Classificacao que define a tolerancia ao risco (conservador, moderado ou arrojado).
+
+---
+
+### Prompt 4 - Prompts de revisao futura
+
+**Pergunta:** "Com base no conteudo das fontes, sugira 5 perguntas estrategicas para revisar esse material no futuro."
+
+**Perguntas sugeridas pelo NotebookLM:**
+1. Como posso descobrir o meu perfil de investidor?
+2. Quais sao os principais direitos do consumidor financeiro?
+3. O que e o programa Aprender Valor do Banco Central?
+4. Quais sao as diferencas entre os tipos de investimentos para iniciantes?
+5. Como a educacao financeira contribui para a estabilidade economica do pais?
+
+---
+
+### Tabela de Cicatrizes
+
+| Situacao | Problema | Solucao |
+|----------|----------|---------|
+| Fontes 4 e 5 nao carregaram | Sites bloquearam acesso do NotebookLM | Usar fontes com texto publicamente visivel |
+| Resposta generica no Prompt 1 | Pergunta muito aberta | Refinar com contexto e especificidade |
+| NotebookLM foi alem das fontes | Tema nao coberto diretamente | Sistema avisou com transparencia |
+
+---
+
+## Miniguia de Estudo - Entrega Final
 
 ### Resumos Estruturados
 
-**1. Controle Financeiro e Orçamento**
-Toda jornada financeira começa pelo diagnóstico: saber exatamente quanto entra e quanto sai. O método 50-30-20 divide a renda em necessidades (50%), desejos (30%) e poupança/investimentos (20%). O registro diário de gastos é a ferramenta mais simples e eficaz para identificar desperdícios.
+**1. Cidadania e Educacao Financeira**
+A cidadania financeira e formada por 4 pilares: educacao financeira, protecao ao consumidor, inclusao financeira e participacao com controle. O Banco Central do Brasil disponibiliza materiais gratuitos e o programa Aprender Valor leva educacao financeira as escolas publicas.
 
-**2. Reserva de Emergência**
-Antes de qualquer investimento, é fundamental ter uma reserva equivalente a 3 a 6 meses de despesas fixas, aplicada em produto de alta liquidez (ex: Tesouro Selic ou CDB com liquidez diária). Ela protege o investidor de imprevistos sem precisar resgatar investimentos de longo prazo.
+**2. Perfil do Investidor**
+Antes de qualquer investimento, e essencial conhecer seu perfil: conservador (prioriza seguranca), moderado (equilibra seguranca e rentabilidade) ou arrojado (aceita mais risco). O Portal do Investidor da CVM oferece ferramentas gratuitas para identificacao do perfil.
 
-**3. Dívidas e Juros**
-O crédito rotativo do cartão e o cheque especial são os maiores vilões das finanças pessoais brasileiras, com juros que podem ultrapassar 300% ao ano. A estratégia recomendada é priorizar o pagamento das dívidas com maiores juros antes de iniciar qualquer investimento.
+**3. Tipos de Investimentos para Iniciantes**
+- Poupanca: Mais simples, mas menor rendimento
+- Tesouro Direto: Titulos publicos federais, seguranca maxima, a partir de R$ 30
+- CDB: Certificado bancario, coberto pelo FGC ate R$ 250 mil por CPF por banco
+- Fundos de Investimento: Gestao profissional coletiva, boa diversificacao inicial
+- Acoes: Maior risco e potencial de retorno; recomendado para perfis moderado/arrojado
 
-**4. Investimentos para Iniciantes**
-- **Tesouro Direto:** Títulos públicos federais, segurança máxima, ideal para iniciantes
-- **CDB:** Certificado de Depósito Bancário, emitido por bancos, coberto pelo FGC até R$ 250 mil
-- **Fundos de Investimento:** Gestão coletiva e profissional, boa opção para quem não quer escolher ativos
+**4. Direitos do Consumidor Financeiro**
+Todo cidadao tem direito a informacoes claras e protecao contra praticas abusivas. O Banco Central disponibiliza o Registrato e o sistema de reclamacoes online.
 
-**5. Juros Compostos — O Poder do Tempo**
-Investir cedo é mais importante do que investir muito. Graças aos juros compostos, R$ 200/mês durante 30 anos gera muito mais patrimônio do que R$ 1.000/mês durante 5 anos.
+**5. O Papel da IA como Ferramenta de Aprendizagem**
+Usar o NotebookLM permitiu consolidar multiplas fontes oficiais e fazer perguntas direcionadas. A IA organiza e facilita o conteudo mas nao substitui o pensamento critico.
 
 ---
 
-### 📚 Glossário de Conceitos
+### Glossario Final
 
-| Termo | Definição Simples |
+| Termo | Definicao Simples |
 |-------|-------------------|
-| **SELIC** | Taxa básica de juros da economia brasileira, definida pelo Banco Central |
-| **CDI** | Certificado de Depósito Interbancário — referência de rentabilidade para renda fixa |
-| **IPCA** | Índice de inflação oficial do Brasil |
-| **Tesouro Direto** | Plataforma do governo para compra de títulos públicos |
-| **CDB** | Título emitido por bancos para captação de recursos |
-| **FGC** | Fundo Garantidor de Créditos — garante até R$ 250 mil por CPF por banco |
-| **Liquidez** | Facilidade de converter um investimento em dinheiro |
-| **Rentabilidade** | Ganho gerado por um investimento em determinado período |
-| **Diversificação** | Estratégia de distribuir investimentos em diferentes ativos |
-| **IOF** | Imposto sobre Operações Financeiras, cobrado em resgates antecipados |
+| Cidadania Financeira | Exercicio de direitos e deveres para gerenciar bem o dinheiro |
+| Educacao Financeira | Processo de aprender sobre dinheiro para tomar decisoes melhores |
+| Inclusao Financeira | Acesso de todos aos servicos financeiros formais |
+| Poupanca | Reservar parte do que ganha para o futuro |
+| Inflacao | Aumento geral dos precos que reduz o poder de compra |
+| Cambio | Troca de moedas entre paises diferentes |
+| Acoes | Pequenas partes de uma empresa negociadas na bolsa |
+| Titulos Publicos | Emprestimo ao governo com retorno futuro com juros |
+| Fundos de Investimento | Pool coletivo gerido por especialista |
+| Perfil de Investidor | Tolerancia ao risco: conservador, moderado ou arrojado |
+| FGC | Fundo Garantidor de Creditos - protege ate R$ 250 mil por banco |
+| Tesouro Direto | Plataforma oficial para compra de titulos publicos federais |
 
 ---
 
-### 🔁 Prompts Reutilizáveis para Revisão Futura
+### Prompts Reutilizaveis para Revisao Futura
 
-Use estes prompts no NotebookLM (com as mesmas fontes) para revisões futuras:
-
-1. `"Resuma em 5 pontos os principais ensinamentos sobre orçamento pessoal das fontes."`
-2. `"Quais são os erros mais comuns de finanças pessoais mencionados nas fontes e como evitá-los?"`
-3. `"Crie 10 questões de múltipla escolha sobre investimentos para iniciantes baseadas nas fontes."`
-4. `"Explique a diferença entre renda fixa e renda variável com exemplos das fontes."`
-5. `"Com base nas fontes, qual seria um plano de 12 meses para sair do zero financeiro?"`
-6. `"Quais estratégias as fontes recomendam para pessoas com renda irregular ou autônomos?"`
-
----
-
-## ✅ Como foi feita a Entrega
-
-1. Repositório criado no GitHub com nome descritivo
-2. README.md estruturado com todos os itens solicitados
-3. Link do repositório submetido na plataforma DIO
-4. Projeto adicionado ao portfólio público
+1. "Como posso descobrir o meu perfil de investidor com base nas fontes?"
+2. "Quais sao os principais direitos do consumidor financeiro mencionados nas fontes?"
+3. "O que e o programa Aprender Valor do Banco Central e quem pode participar?"
+4. "Resuma os tipos de investimentos disponiveis para iniciantes segundo as fontes."
+5. "Como a educacao financeira contribui para a estabilidade economica do pais?"
+6. "Crie 10 perguntas de multipla escolha sobre educacao financeira baseadas nas fontes."
+7. "Quais ferramentas o Banco Central oferece ao cidadao para controle financeiro?"
 
 ---
 
-*Projeto desenvolvido como parte da trilha **CI&T — Do Prompt ao Agente** na plataforma [DIO](https://web.dio.me)*
+## Link do Notebook
+
+Notebook criado no NotebookLM: Miniguia de Financas Pessoais com NotebookLM
+https://notebooklm.google.com/notebook/bc0727e1-de02-4208-bf3e-d11f0345f04b
+
+---
+
+## Como foi feita a Entrega
+
+1. Repositorio criado no GitHub: estudos-ia-notebooklm
+2. Notebook criado no NotebookLM com 3 fontes oficiais ativas (BCB, CVM, Tesouro Direto)
+3. Prompts estrategicos executados e documentados com cicatrizes reais
+4. README.md estruturado com todos os itens solicitados pela DIO
+5. Link do repositorio submetido na plataforma DIO
+
+---
+
+Projeto desenvolvido como parte da trilha CI&T - Do Prompt ao Agente na plataforma DIO (https://web.dio.me)
